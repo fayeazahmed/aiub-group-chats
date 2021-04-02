@@ -1,0 +1,203 @@
+.chat {
+	max-width: 740px;
+	margin: auto;
+	margin-top: 7px;
+	background-color: #cadae6;
+	padding: 0;
+	position: relative;
+
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		p,
+		h4 {
+			margin: 0;
+		}
+
+		p {
+			color: #004ea2;
+			font-size: 33px;
+		}
+
+		h4 {
+			font-size: 21px;
+			font-family: "Zilla Slab", serif;
+
+			@media (max-width: 1335px) {
+				font-size: 18px;
+				max-width: 240px;
+			}
+		}
+	}
+
+	.bmloader {
+		position: absolute;
+		right: 34px;
+		top: 7px;
+		animation: spin 0.6s linear infinite;
+		font-size: 19px;
+	}
+
+	.backarrow {
+		position: absolute;
+		line-height: 1;
+		top: 7px;
+		left: 7px;
+		font-size: 30px;
+		padding: 2px 8px;
+	}
+
+	&__bookmark {
+		position: absolute;
+		right: 0;
+		top: -3px;
+		cursor: pointer;
+
+		i {
+			font-size: 40px;
+		}
+	}
+
+	&__container {
+		height: 558px;
+		overflow-y: auto;
+
+		.message {
+			display: flex;
+			align-items: flex-end;
+			padding: 15px;
+
+			p {
+				margin: 0;
+				color: black;
+			}
+
+			&__dp {
+				i {
+					background-color: #cadae6;
+					font-size: 28px;
+					padding: 6px;
+					border-radius: 50%;
+					height: 40px;
+					width: 40px;
+				}
+			}
+
+			&__info {
+				margin-left: 15px;
+			}
+
+			&__time {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-top: 6px;
+
+				h5 {
+					font-size: 14px;
+				}
+
+				h6 {
+					font-size: 14px;
+					font-family: "Titillium Web", sans-serif;
+					margin-left: 115px;
+				}
+			}
+
+			&__text {
+				p {
+					background-color: #adbac4;
+					font-family: "Cabin", sans-serif;
+					font-size: 18px;
+					text-align: left;
+					max-width: 600px;
+					padding: 7px 16px;
+					border-radius: 25px;
+				}
+			}
+
+			&--self {
+				flex-direction: row-reverse;
+
+				.message__info {
+					margin-left: 0;
+					margin-right: 15px;
+				}
+
+				.message__time {
+					flex-direction: row-reverse;
+					h6 {
+						margin-right: 115px;
+						margin-left: 0;
+					}
+				}
+
+				p {
+					background-color: #004ea2;
+					color: white;
+				}
+			}
+		}
+
+		&::-webkit-scrollbar {
+			background-color: rgba($color: #ffffff, $alpha: 0.4);
+			border-radius: 10px;
+		}
+		&::-webkit-scrollbar-thumb {
+			border-radius: 10px;
+			background-color: #fff;
+			background-image: -webkit-gradient(
+				linear,
+				40% 0%,
+				75% 84%,
+				from(#cadae6),
+				to(#adbac4)
+			);
+		}
+	}
+
+	&__typing {
+		position: absolute;
+		left: 17px;
+		bottom: 42px;
+		font-family: "Cabin", sans-serif;
+		font-size: 16px;
+		color: white;
+		text-shadow: 1px 1px 2px black;
+		p {
+			margin: 0;
+		}
+	}
+
+	&__input {
+		padding: 0 0 0 15px;
+		position: relative;
+		width: 100%;
+		max-width: 740px;
+		bottom: 0;
+
+		input {
+			border-radius: 0;
+			height: 40px;
+			width: 50%;
+			text-align: left;
+			font-family: "Cabin", sans-serif;
+			font-size: 18px;
+			transition: all 0.3s;
+
+			&:focus {
+				width: 100%;
+			}
+		}
+
+		button {
+			position: absolute;
+			right: 0px;
+			top: 1px;
+			border-radius: 0;
+			width: 80px;
+		}
+	}
+}

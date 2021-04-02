@@ -1,0 +1,534 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Zilla+Slab&family=Titillium+Web&family=Karla&family=Poppins:wght@300&display=swap");
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 35px;
+}
+
+@media (max-width: 1335px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.main__welcome {
+  position: relative;
+}
+
+.main__welcome form {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  width: 324px;
+}
+
+.main__welcome form div {
+  position: absolute;
+  right: 10px;
+  top: -35px;
+  padding: 6px;
+  margin: 0;
+  -webkit-animation: opacity 0.3s;
+          animation: opacity 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.main__welcome form i {
+  cursor: pointer;
+  position: absolute;
+  color: #e20000;
+  font-size: 15px;
+  top: -13px;
+  right: -3px;
+}
+
+.main__welcome form input {
+  height: 26px;
+  text-align: left;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  padding: 0;
+}
+
+.main__welcome form input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.main__welcome h4 {
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+}
+
+@media (max-width: 1335px) {
+  .main__welcome h4 {
+    text-align: center;
+  }
+}
+
+.main__welcome h4 span {
+  font-style: italic;
+}
+
+.main__welcome h5 {
+  width: 400px;
+  text-align: left;
+  font-family: "Cabin", sans-serif;
+  font-size: 15px;
+}
+
+@media (max-width: 1335px) {
+  .main__welcome h5 {
+    margin: auto;
+  }
+}
+
+.main__welcome h5 span {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+.main__form {
+  margin-left: 30px;
+  position: relative;
+}
+
+@media (max-width: 1335px) {
+  .main__form {
+    margin: 5px 0;
+  }
+}
+
+.main__form p {
+  margin: 0;
+}
+
+.main__form form {
+  text-align: left;
+}
+
+.main__form form label {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+.main__form form input {
+  text-align: left;
+  width: 470px;
+}
+
+@media (max-width: 1335px) {
+  .main__form form input {
+    width: 100%;
+  }
+}
+
+.main__form .searchResults {
+  position: absolute;
+  top: 72px;
+  background-color: #e5ecf5;
+  width: 470px;
+  padding: 10px;
+  border-radius: 7px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-animation: opacity 0.3s;
+          animation: opacity 0.3s;
+  z-index: 10;
+}
+
+.main__form .searchResults__info {
+  font-family: cursive;
+  font-style: italic;
+  text-align: left;
+}
+
+.main__form .searchResults__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+  padding: 6px 13px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.main__form .searchResults__element:hover {
+  background-color: #c3d5e4;
+}
+
+.main__form .searchResults__element p {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.main__form .searchResults button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.main__form .formloader {
+  position: absolute;
+  right: 5px;
+  font-size: 20px;
+  top: 35px;
+  -webkit-animation: spin 0.6s linear infinite;
+          animation: spin 0.6s linear infinite;
+}
+
+.main__bookmarks {
+  margin-left: 30px;
+}
+
+@media (max-width: 1335px) {
+  .main__bookmarks {
+    margin: 0;
+  }
+}
+
+.main__bookmarks header {
+  font-size: 20px;
+  text-align: left;
+}
+
+.main__bookmarks .bookmark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  margin-top: 5px;
+  padding: 6px 13px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #e5ecf5;
+  color: black;
+}
+
+.main__bookmarks .bookmark p {
+  margin: 0;
+  margin-left: 5px;
+}
+
+.main__bookmarks .bookmark:hover {
+  background-color: #c3d5e4;
+}
+
+.main__bookmarks .nobm {
+  font-family: "Cabin", sans-serif;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.chat {
+  max-width: 740px;
+  margin: auto;
+  margin-top: 7px;
+  background-color: #cadae6;
+  padding: 0;
+  position: relative;
+}
+
+.chat__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.chat__header p,
+.chat__header h4 {
+  margin: 0;
+}
+
+.chat__header p {
+  color: #004ea2;
+  font-size: 33px;
+}
+
+.chat__header h4 {
+  font-size: 21px;
+  font-family: "Zilla Slab", serif;
+}
+
+@media (max-width: 1335px) {
+  .chat__header h4 {
+    font-size: 18px;
+    max-width: 240px;
+  }
+}
+
+.chat .bmloader {
+  position: absolute;
+  right: 34px;
+  top: 7px;
+  -webkit-animation: spin 0.6s linear infinite;
+          animation: spin 0.6s linear infinite;
+  font-size: 19px;
+}
+
+.chat .backarrow {
+  position: absolute;
+  line-height: 1;
+  top: 7px;
+  left: 7px;
+  font-size: 30px;
+  padding: 2px 8px;
+}
+
+.chat__bookmark {
+  position: absolute;
+  right: 0;
+  top: -3px;
+  cursor: pointer;
+}
+
+.chat__bookmark i {
+  font-size: 40px;
+}
+
+.chat__container {
+  height: 558px;
+  overflow-y: auto;
+}
+
+.chat__container .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 15px;
+}
+
+.chat__container .message p {
+  margin: 0;
+  color: black;
+}
+
+.chat__container .message__dp i {
+  background-color: #cadae6;
+  font-size: 28px;
+  padding: 6px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.chat__container .message__info {
+  margin-left: 15px;
+}
+
+.chat__container .message__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 6px;
+}
+
+.chat__container .message__time h5 {
+  font-size: 14px;
+}
+
+.chat__container .message__time h6 {
+  font-size: 14px;
+  font-family: "Titillium Web", sans-serif;
+  margin-left: 115px;
+}
+
+.chat__container .message__text p {
+  background-color: #adbac4;
+  font-family: "Cabin", sans-serif;
+  font-size: 18px;
+  text-align: left;
+  max-width: 600px;
+  padding: 7px 16px;
+  border-radius: 25px;
+}
+
+.chat__container .message--self {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.chat__container .message--self .message__info {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+.chat__container .message--self .message__time {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.chat__container .message--self .message__time h6 {
+  margin-right: 115px;
+  margin-left: 0;
+}
+
+.chat__container .message--self p {
+  background-color: #004ea2;
+  color: white;
+}
+
+.chat__container::-webkit-scrollbar {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+.chat__container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#cadae6), to(#adbac4));
+}
+
+.chat__typing {
+  position: absolute;
+  left: 17px;
+  bottom: 42px;
+  font-family: "Cabin", sans-serif;
+  font-size: 16px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+.chat__typing p {
+  margin: 0;
+}
+
+.chat__input {
+  padding: 0 0 0 15px;
+  position: relative;
+  width: 100%;
+  max-width: 740px;
+  bottom: 0;
+}
+
+.chat__input input {
+  border-radius: 0;
+  height: 40px;
+  width: 50%;
+  text-align: left;
+  font-family: "Cabin", sans-serif;
+  font-size: 18px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.chat__input input:focus {
+  width: 100%;
+}
+
+.chat__input button {
+  position: absolute;
+  right: 0px;
+  top: 1px;
+  border-radius: 0;
+  width: 80px;
+}
+
+.App nav {
+  background-image: url("./banner.jpg");
+  padding: 32px;
+  background-position: right;
+}
+
+@media (max-width: 1335px) {
+  .App nav {
+    background-position: center;
+  }
+}
+
+.App nav header {
+  font-size: 40px;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 0 25px;
+  border-radius: 23px;
+  color: #004ea2;
+}
+
+@media (max-width: 1335px) {
+  .App nav header {
+    font-size: 25px;
+  }
+}
+
+.App nav header span {
+  font-family: "Karla", sans-serif;
+  color: white;
+  text-shadow: -2px 1px 2px black;
+}
+/*# sourceMappingURL=App.css.map */

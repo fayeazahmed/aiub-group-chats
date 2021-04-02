@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Zilla+Slab&family=Titillium+Web&family=Karla&family=Poppins:wght@300&display=swap");
+@import "./components/scss/main";
+@import "./components/scss/chat";
+
+.App {
+	nav {
+		background-image: url("./banner.jpg");
+		padding: 32px;
+		background-position: right;
+
+		@media (max-width: 1335px) {
+			background-position: center;
+		}
+
+		header {
+			font-size: 40px;
+			display: inline-block;
+			background-color: rgba(256, 256, 256, 0.6);
+			padding: 0 25px;
+			border-radius: 23px;
+			color: #004ea2;
+
+			@media (max-width: 1335px) {
+				font-size: 25px;
+			}
+
+			span {
+				font-family: "Karla", sans-serif;
+				color: white;
+				text-shadow: -2px 1px 2px black;
+			}
+		}
+	}
+}
